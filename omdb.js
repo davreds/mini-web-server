@@ -9,7 +9,7 @@ if ( process.env.NODE_ENV === 'production') {
 
 const omdbMovie = function( title, callback ) {
     const url = 'http://www.omdbapi.com/?t=' + title +
-    '&apikey=' + APIKEY.apikey
+    '&apikey=' + APIKEY
     console.log(url)
     request({ url, json: true }, function(error, response ) {
         if (error) {
